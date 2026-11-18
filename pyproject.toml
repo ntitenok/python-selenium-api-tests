@@ -28,3 +28,7 @@ dev = [
 
 [tool.poetry]
 package-mode = false
+
+[tool.pytest.ini_options]
+addopts = "-v --tb=short --alluredir=allure-results"
+testpaths = ["tests"]
